@@ -36,13 +36,13 @@ public class ExtentReportManager implements ITestListener {
 	public void onStart(ITestContext context) 
 	{
 		
-	//String timestamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
+	String timestamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
 	
-	repName = "Test-Report" +".html";
+	repName = "Test-Report" +" "+timestamp+ ".html";
 		
 
 			
-		sparkReporter=new ExtentSparkReporter(".\\Reports\\" +  repName);//specify location of the report
+		sparkReporter=new ExtentSparkReporter(".\\Reports\\"  +repName);//specify location of the report
 		
 		sparkReporter.config().setDocumentTitle("Automation Test Report"); // TiTle of report
 		sparkReporter.config().setReportName("Functional Testing"); // name of the report
@@ -51,7 +51,7 @@ public class ExtentReportManager implements ITestListener {
 		extent=new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		
-		extent.setSystemInfo("Computer Name","localhost");
+		extent.setSystemInfo("Computer Name","localhos t");
 		extent.setSystemInfo("Environment","QA");
 		extent.setSystemInfo("Tester Name","Kiran");
 		extent.setSystemInfo("os","Windows10");
