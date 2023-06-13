@@ -42,7 +42,7 @@ public class ExtentReportManager implements ITestListener {
 		
 
 			
-		sparkReporter=new ExtentSparkReporter(".\\Reports\\"  +repName);//specify location of the report
+		sparkReporter=new ExtentSparkReporter(".\\Reports\\TestReports\\"  +repName);//specify location of the report
 		
 		sparkReporter.config().setDocumentTitle("Automation Test Report"); // TiTle of report
 		sparkReporter.config().setReportName("Functional Testing"); // name of the report
