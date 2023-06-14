@@ -13,7 +13,10 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -69,23 +72,24 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		
-		test = extent.createTest(result.getName());
-		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
-		test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());
-		
-	
-		
-		try {
-			String	imgpath = new BaseClass().CapctureScreen(result.getName());
-			test.addScreenCaptureFromPath(imgpath);
-		} catch (IOException e) {
+		if (result.getStatus() == ITestResult.FAILURE) {
+			try {
+				test.log(Status.FAIL,
+						MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
+				test.log(Status.FAIL,
+						MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
+				String imgPath =  new BaseClass().CapctureScreen(result.getName());
 			
-			e.printStackTrace();
+				test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
-		
-		
-					
 	}
+
+		
 
 	public void onTestSkipped(ITestResult result) {
 
