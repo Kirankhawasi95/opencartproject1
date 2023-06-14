@@ -36,7 +36,7 @@ public class ExtentReportManager implements ITestListener {
 	public void onStart(ITestContext context) 
 	{
 		
-	String timestamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"). format (new Date());
+	String timestamp= new SimpleDateFormat("MM.dd.YYYY.HH.mm.ss"). format (new Date());
 	
 	repName = "Test-Report" +"-" +timestamp+ ".html";
 		
