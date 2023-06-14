@@ -134,8 +134,13 @@ public class BaseClass {
 			
 			{
 				e.getMessage();
+				
+				
 			}
-			return destfile;
+			
+			//This is the path for Jenkins
+			String NewImgstring="http://localhost:8080/job/OpenCartPrj/ws/Screenshoot/"+  Tname + "_" + TimeStamp + ".Png";
+			return NewImgstring;
 					
 		}
 
