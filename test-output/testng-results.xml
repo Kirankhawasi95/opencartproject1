@@ -1,94 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-14T22:05:31 IST" name="My_Suite" finished-at="2023-06-14T22:05:42 IST" duration-ms="10557">
+  <suite started-at="2023-06-14T22:11:59 IST" name="My_Suite" finished-at="2023-06-14T22:12:11 IST" duration-ms="11860">
     <groups>
       <group name="Sanity">
         <method signature="TC_002_LogInPage_Test.LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" name="LogInPage_Test" class="TestClass.TC_002_LogInPage_Test"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2023-06-14T22:05:31 IST" name="ChromeBrowserTest" finished-at="2023-06-14T22:05:42 IST" duration-ms="10557">
+    <test started-at="2023-06-14T22:11:59 IST" name="ChromeBrowserTest" finished-at="2023-06-14T22:12:11 IST" duration-ms="11860">
       <class name="TestClass.TC_002_LogInPage_Test">
-        <test-method is-config="true" signature="Launch_Application()[pri:0, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:05:31 IST" name="Launch_Application" finished-at="2023-06-14T22:05:40 IST" duration-ms="8298" status="PASS">
+        <test-method is-config="true" signature="Launch_Application()[pri:0, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:12:00 IST" name="Launch_Application" finished-at="2023-06-14T22:12:08 IST" duration-ms="8541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch_Application -->
-        <test-method signature="LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:05:40 IST" name="LogInPage_Test" finished-at="2023-06-14T22:05:40 IST" duration-ms="716" status="FAIL">
-          <exception class="java.util.MissingResourceException">
-            <message>
-              <![CDATA[Can't find resource for bundle java.util.PropertyResourceBundle, key Passwor]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key Passwor
-at java.base/java.util.ResourceBundle.getObject(ResourceBundle.java:564)
-at java.base/java.util.ResourceBundle.getString(ResourceBundle.java:521)
-at TestClass.TC_002_LogInPage_Test.LogInPage_Test(TC_002_LogInPage_Test.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.MissingResourceException -->
+        <test-method signature="LogInPage_Test()[pri:-1, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:12:08 IST" name="LogInPage_Test" finished-at="2023-06-14T22:12:10 IST" duration-ms="1430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInPage_Test -->
-        <test-method signature="LogInConif_Test()[pri:0, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:05:41 IST" name="LogInConif_Test" finished-at="2023-06-14T22:05:41 IST" duration-ms="5" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "PageObjects.HomePage.VerifyLogin()" because "this.homepage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "PageObjects.HomePage.VerifyLogin()" because "this.homepage" is null
-at TestClass.TC_002_LogInPage_Test.LogInConif_Test(TC_002_LogInPage_Test.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="LogInConif_Test()[pri:0, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:12:10 IST" name="LogInConif_Test" finished-at="2023-06-14T22:12:11 IST" duration-ms="848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInConif_Test -->
-        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:05:41 IST" name="Application_Close" finished-at="2023-06-14T22:05:42 IST" duration-ms="668" status="PASS">
+        <test-method is-config="true" signature="Application_Close()[pri:0, instance:TestClass.TC_002_LogInPage_Test@1e6a3214]" started-at="2023-06-14T22:12:11 IST" name="Application_Close" finished-at="2023-06-14T22:12:11 IST" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Application_Close -->
