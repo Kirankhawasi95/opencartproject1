@@ -1,0 +1,14 @@
+{
+  "theme": "STANDARD",
+  "encoding": "utf-8",
+  "protocol": "HTTPS",
+  "timelineEnabled": false,
+  "offlineMode": true,
+  "thumbnailForBase64": false,
+  "documentTitle": "OpenCart",
+  "reportName": "Functional Testing",
+  "timeStampFormat": "MMM dd, yyyy HH:mm:ss a",
+  "js": "document.getElementsByClassName('logo')[0].style.display='none",
+  "css": ""
+}
+		

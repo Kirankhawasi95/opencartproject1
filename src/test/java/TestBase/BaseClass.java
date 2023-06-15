@@ -120,7 +120,7 @@ public class BaseClass {
 			
 			//String timestamp=sp.format(db);
 			
-			String TimeStamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+			String TimeStamp= new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 			
 			
 			TakesScreenshot ScreenShoot = (TakesScreenshot) driver;
@@ -140,7 +140,7 @@ public class BaseClass {
 			
 			//This is the path for Jenkins
 			String NewImgstring="http://localhost:8080/job/OpenCartPrj/ws/Screenshoot/"+  Tname + "_" + TimeStamp + ".Png";
-			return NewImgstring;
+			return destfile;
 					
 		}
 
